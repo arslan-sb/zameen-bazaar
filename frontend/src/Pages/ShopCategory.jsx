@@ -1,9 +1,11 @@
 import React from 'react';
+import './CSS/ShopCategory.css';
 
 const ShopCategory = () => {
   return (
-    <div>
-      {/* Your component code here */}
+    <div className='shop-category'>
+
+
     </div>
   );
 };

@@ -8,6 +8,7 @@ import ShopCategory from './Pages/ShopCategory';
 import Product from './Pages/Product';
 import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
+import Footer from './Components/Footer/Footer';
 /**
  * Renders the main application component.
  * @returns {JSX.Element} The rendered App component.
@@ -29,6 +30,7 @@ function App() {
           <Route path="/login" element={<LoginSignup />} />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
