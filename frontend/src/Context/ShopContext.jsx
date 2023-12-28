@@ -9,15 +9,13 @@ export const ShopContext = createContext(null);
 
 // Defining a helper component that provides the data storage (context) to its children
 const ShopContextProvider = (props) => {
-  // Preparing the data to be shared in the context
-  const contextValue = { all_products };
-
   // Wrapping the children components with the data storage (context) provider
   return (
-    <ShopContext.Provider value={contextValue}>
-      {props.children} {/* Displaying the children components */}
+    <ShopContext.Provider value={all_products}>
+      {props.children && props.children} {/* Displaying the children components if they exist */}
     </ShopContext.Provider>
   );
+
 }
 
 // Making the helper component available for other parts of the application
