@@ -1,16 +1,22 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useContext } from 'react';
+import { ShopContext } from '../Context/ShopContext';
 
+import { useParams } from 'react-router-dom';
+import Breadcrum from '../Components/Breadcrums/Breadcrum';
+import ProductDisplay from '../Components/ProductDisplay/ProductDisplay';
 const Product = () => {
+  const all_products = useContext(ShopContext);
+  const { productId } = useParams();
+  const product = all_products.find((product) => product.id === Number(productId));
   return (
     <div>
-      {/* Your component JSX goes here */}
+      <Breadcrum product={product} />
+      <ProductDisplay product={product}/>
+
     </div>
   );
 };
 
-Product.propTypes = {
-  // Define your prop types here
-};
+
 
 export default Product;
