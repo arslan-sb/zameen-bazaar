@@ -34,8 +34,21 @@ const ProductDisplay = (props) => {
           <div className="productdisplay-right-price-new">Rs{product.new_price}</div>
         </div>
         <div className="productdisplay-right-discription">
-
+          {product.discription}
         </div>
+        <div className="productdisplay-right-size">
+          <h1>Select</h1>
+          <div className="productdisplay-right-sizes">
+            <div>1 kg</div>
+            <div>2 kg</div>
+            <div>3 kg</div>
+            <div>4 kg</div>
+            <div>5 kg</div>
+          </div>
+        </div>
+        <button>ADD TO CART</button>
+        <p className="productdisplay-right-category"><span>Category: </span>{product.category}, Fresh, Fruit</p>
+        <p className="productdisplay-right-category"><span>Tags:</span> Fresh, Imported, High Quality</p>
       </div>
     </div>
   );
