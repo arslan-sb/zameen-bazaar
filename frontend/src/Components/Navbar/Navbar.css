@@ -37,9 +37,10 @@
 }
 
 .nav-menu li:hover{
-  color: #171717;
+  color: #FF4141;
   cursor: pointer;
 }
+
 
 .nav-menu hr{
   border: none;

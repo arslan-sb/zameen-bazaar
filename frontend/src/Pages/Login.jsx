@@ -2,26 +2,24 @@ import React from 'react';
 import './CSS/LoginSignup.css';
 import { Link } from 'react-router-dom';
 
-const LoginSignup = () => {
+const Login = () => {
   return (
     <div className='loginsignup'>
       <div className="loginsignup-container">
-        <h1>Sign up</h1>
+        <h1>Login</h1>
         <div className='loginsignup-fields'>
-          <input type="text" placeholder='Your Name' />
           <input type="email" placeholder='Email Address' name="" id="" />
           <input type="password" placeholder="Password" name="" id="" />
         </div>
-        <button>Continue</button>
-        <p className="loginsignup-login">Already have an account? <Link to='/login'> <span>Login here</span></Link></p>
+        <button>Login</button>
+        <p className="loginsignup-login">Don't have an account? <Link to='/signup'><span>Sign up here</span></Link></p>
         <div className="loginsignup-agree">
           <input type="checkbox" name="" id="" />
-          <p>By continuing, I agree to the terms of use & privacy policy</p>
+          <p>By logging in, I agree to the terms of use & privacy policy</p>
         </div>
       </div>
-
     </div>
   );
 };
 
-export default LoginSignup;
+export default Login;

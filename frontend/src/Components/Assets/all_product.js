@@ -39,7 +39,7 @@ let all_product = [
   {
     id: 1,
     name: "Coconut",
-    category: "women",
+    category: "crop",
     image: p1_img,
     new_price: 50.0,
     old_price: 80.5,
@@ -48,7 +48,7 @@ let all_product = [
   {
     id: 2,
     name: "Coffee",
-    category: "women",
+    category: "crop",
     image: p2_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -57,7 +57,7 @@ let all_product = [
   {
     id: 3,
     name: "Maize",
-    category: "women",
+    category: "crop",
     image: p3_img,
     new_price: 60.0,
     old_price: 100.5,
@@ -66,7 +66,7 @@ let all_product = [
   {
     id: 4,
     name: "Rice",
-    category: "women",
+    category: "crop",
     image: p4_img,
     new_price: 100.0,
     old_price: 150.0,
@@ -75,7 +75,7 @@ let all_product = [
   {
     id: 5,
     name: "Sugarcane",
-    category: "women",
+    category: "crop",
     image: p5_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -84,7 +84,7 @@ let all_product = [
   {
     id: 6,
     name: "Wheat",
-    category: "women",
+    category: "crop",
     image: p6_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -93,7 +93,7 @@ let all_product = [
   {
     id: 7,
     name: "Cotton",
-    category: "women",
+    category: "crop",
     image: p7_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -102,7 +102,7 @@ let all_product = [
   {
     id: 8,
     name: "Soybeans",
-    category: "women",
+    category: "crop",
     image: p8_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -111,7 +111,7 @@ let all_product = [
   {
     id: 9,
     name: "Walnuts",
-    category: "women",
+    category: "crop",
     image: p9_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -120,7 +120,7 @@ let all_product = [
   {
     id: 10,
     name: "Flaxseed",
-    category: "women",
+    category: "crop",
     image: p10_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -129,7 +129,7 @@ let all_product = [
   {
     id: 11,
     name: "Peanuts",
-    category: "women",
+    category: "crop",
     image: p11_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -138,7 +138,7 @@ let all_product = [
   {
     id: 12,
     name: "Cashews",
-    category: "women",
+    category: "crop",
     image: p12_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -147,7 +147,7 @@ let all_product = [
   {
     id: 13,
     name: "Apple",
-    category: "men",
+    category: "fruit",
     image: p13_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -156,7 +156,7 @@ let all_product = [
   {
     id: 14,
     name: "Bananas",
-    category: "men",
+    category: "fruit",
     image: p14_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -165,7 +165,7 @@ let all_product = [
   {
     id: 15,
     name: "Green Grapes",
-    category: "men",
+    category: "fruit",
     image: p15_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -174,7 +174,7 @@ let all_product = [
   {
     id: 16,
     name: "Mango",
-    category: "men",
+    category: "fruit",
     image: p16_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -183,7 +183,7 @@ let all_product = [
   {
     id: 17,
     name: "Orange",
-    category: "men",
+    category: "fruit",
     image: p17_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -192,7 +192,7 @@ let all_product = [
   {
     id: 18,
     name: "Strawberry",
-    category: "men",
+    category: "fruit",
     image: p18_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -201,7 +201,7 @@ let all_product = [
   {
     id: 19,
     name: "Pineapples",
-    category: "men",
+    category: "fruit",
     image: p19_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -210,7 +210,7 @@ let all_product = [
   {
     id: 20,
     name: "Watermelons",
-    category: "men",
+    category: "fruit",
     image: p20_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -219,7 +219,7 @@ let all_product = [
   {
     id: 21,
     name: "Peaches",
-    category: "men",
+    category: "fruit",
     image: p21_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -228,7 +228,7 @@ let all_product = [
   {
     id: 22,
     name: "Pomegranate",
-    category: "men",
+    category: "fruit",
     image: p22_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -237,7 +237,7 @@ let all_product = [
   {
     id: 23,
     name: "Grapefruit",
-    category: "men",
+    category: "fruit",
     image: p23_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -246,7 +246,7 @@ let all_product = [
   {
     id: 24,
     name: "Cherries",
-    category: "men",
+    category: "fruit",
     image: p24_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -255,7 +255,7 @@ let all_product = [
   {
     id: 25,
     name: "Cabbage",
-    category: "kid",
+    category: "vegetable",
     image: p25_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -264,7 +264,7 @@ let all_product = [
   {
     id: 26,
     name: "Carrot",
-    category: "kid",
+    category: "vegetable",
     image: p26_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -273,7 +273,7 @@ let all_product = [
   {
     id: 27,
     name: "Cauliflower",
-    category: "kid",
+    category: "vegetable",
     image: p27_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -282,7 +282,7 @@ let all_product = [
   {
     id: 28,
     name: "Green Capsicum",
-    category: "kid",
+    category: "vegetable",
     image: p28_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -291,7 +291,7 @@ let all_product = [
   {
     id: 29,
     name: "Onion",
-    category: "kid",
+    category: "vegetable",
     image: p29_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -300,7 +300,7 @@ let all_product = [
   {
     id: 30,
     name: "Potato",
-    category: "kid",
+    category: "vegetable",
     image: p30_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -309,7 +309,7 @@ let all_product = [
   {
     id: 31,
     name: "Tomato",
-    category: "kid",
+    category: "vegetable",
     image: p31_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -318,7 +318,7 @@ let all_product = [
   {
     id: 32,
     name: "Brocoli",
-    category: "kid",
+    category: "vegetable",
     image: p32_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -327,7 +327,7 @@ let all_product = [
   {
     id: 33,
     name: "Lettuce",
-    category: "kid",
+    category: "vegetable",
     image: p33_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -336,7 +336,7 @@ let all_product = [
   {
     id: 34,
     name: "Cucumber",
-    category: "kid",
+    category: "vegetable",
     image: p34_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -345,7 +345,7 @@ let all_product = [
   {
     id: 35,
     name: "Garlic",
-    category: "kid",
+    category: "vegetable",
     image: p35_img,
     new_price: 85.0,
     old_price: 120.5,
@@ -354,7 +354,7 @@ let all_product = [
   {
     id: 36,
     name: "Turnips",
-    category: "kid",
+    category: "vegetable",
     image: p36_img,
     new_price: 85.0,
     old_price: 120.5,

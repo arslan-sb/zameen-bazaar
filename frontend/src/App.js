@@ -10,8 +10,10 @@ import Cart from './Pages/Cart';
 import LoginSignup from './Pages/LoginSignup';
 import Footer from './Components/Footer/Footer';
 import men_banner from './Components/Assets/banner_mens.png'
-import women_banner from './Components/Assets/banner_women.png'
-import kid_banner from './Components/Assets/banner_kids.png'
+import crop_banner from './Components/Assets/crop-banner.png'
+import veg_banner from './Components/Assets/banners.jpg'
+import gen_banner from './Components/Assets/banner2.jpg'
+import Login from './Pages/Login';
 /**
  * Renders the main application component.
  * @returns {JSX.Element} The rendered App component.
@@ -25,14 +27,15 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
-          <Route path="/mens" element={<ShopCategory banner={men_banner} category="men" />} />
-          <Route path="/womens" element={<ShopCategory banner={women_banner} category="women" />} />
-          <Route path="/kids" element={<ShopCategory banner={kid_banner} category="kid" />} />
+          <Route path="/fruits" element={<ShopCategory banner={gen_banner} category="fruit" />} />
+          <Route path="/crops" element={<ShopCategory banner={crop_banner} category="crop" />} />
+          <Route path="/vegetables" element={<ShopCategory banner={veg_banner} category="vegetable" />} />
           <Route path="/product" element={<Product />} >
             <Route path=":productId" element={<Product />} />
           </Route>
           <Route path="/cart" element={<Cart />} />
-          <Route path="/login" element={<LoginSignup />} />
+          <Route path="/signup" element={<LoginSignup />} />
+          <Route path="/login" element={<Login />} />
           <Route path="*" element={<h1>Not Found</h1>} />
         </Routes>
         <Footer />

@@ -3,8 +3,10 @@ import './Navbar.css';
 import logo from '../Assets/logo.png';
 import cart_icon from '../Assets/cart_icon.png';
 import { Link } from 'react-router-dom';
+import { ShopContext } from '../../Context/ShopContext';
 const Navbar = () => {
   const [menu, setMenu] = React.useState("shop");
+  const { getTotalCartItems } = React.useContext(ShopContext);
 
   return (
     <div className='navbar'>
@@ -14,16 +16,16 @@ const Navbar = () => {
         <p>AGROCART</p>
       </div>
       <ul className='nav-menu'>
-        <li onClick={() => { setMenu("shop") }}><Link to="/" style={{ textDecoration: 'none' }}>Shop</Link> {menu === "shop" ? <hr /> : <></>}</li>
-        <li onClick={() => { setMenu("mens") }}><Link to="/mens" style={{ textDecoration: 'none' }}>Men</Link>{menu === "mens" ? <hr /> : <></>}</li>
-        <li onClick={() => { setMenu("womens") }}><Link to="Womens" style={{ textDecoration: 'none' }}>Women</Link>{menu === "womens" ? <hr /> : <></>}</li>
-        <li onClick={() => { setMenu("kids") }}><Link to="Kids" style={{ textDecoration: 'none' }}>Kids</Link>{menu === "kids" ? <hr /> : <></>}</li>
+        <li onClick={() => { setMenu("shop") }}><Link to="/" style={{ textDecoration: 'none', color: 'black' }}>Shop</Link> {menu === "shop" ? <hr /> : <></>}</li>
+        <li onClick={() => { setMenu("fruits") }}><Link to="/fruits" style={{ textDecoration: 'none', color: 'black' }}>Fruits</Link>{menu === "fruits" ? <hr /> : <></>}</li>
+        <li onClick={() => { setMenu("crops") }}><Link to="crops" style={{ textDecoration: 'none', color: 'black' }}>Crops</Link>{menu === "crops" ? <hr /> : <></>}</li>
+        <li onClick={() => { setMenu("vegetables") }}><Link to="vegetables" style={{ textDecoration: 'none', color: 'black' }}>Vegetables</Link>{menu === "vegetables" ? <hr /> : <></>}</li>
       </ul>
       <div className="nav-login-cart">
-        <Link to="/login"><button>Login</button></Link>
+        <Link to="/signup"><button>Login</button></Link>
         <Link to="/cart"><img src={cart_icon} alt="" /></Link>
         <div className="nav-cart-count">
-          0
+          {getTotalCartItems()}
         </div>
       </div>
     </div>
